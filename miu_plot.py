@@ -36,12 +36,13 @@ def miu_plot(list_lambdas,title="",axes_labels=("",""),xaxis=(-10,0),yaxis=(-10,
             i=i+1
 
     # prettify inequality curves
-    i=0; picker=["solid","dashed","dotted","-."]
+    i=0; picker=["solid","dashed","dotted","-.","solid"]
     for ineq in plotter.regions[0].inequalities:
         ineq.config.line_args = {'color': 'black', 'linestyle':picker[i]}
         i=i+1
     plotter.plot()
     if show_legend:
         plotter.ax.legend(loc='best')
-    plt.show()
+
+    return plotter
 
