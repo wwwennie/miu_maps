@@ -11,7 +11,7 @@ compete=[("Bi2O3",-5.785),
          ("VO2",-7.386),
          ("V2O3",-13.273),
          ("V2O5",-16.1427), 
-         ("BiV",-11.676)]
+        ("BiV",-11.676)] # last ineq is helper line for identifying boundaries
 
 ## Yin 2011
 #host=("BiVO4",-13.95)

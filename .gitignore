@@ -1,3 +1,15 @@
 __pycache__
 fillplots/__pycache__/
 fillplots/utils/__pycache__/
+fillplots/__pycache__/__init__.cpython-36.pyc
+fillplots/__pycache__/api.cpython-36.pyc
+fillplots/__pycache__/boundaries.cpython-36.pyc
+fillplots/__pycache__/coloring.cpython-36.pyc
+fillplots/__pycache__/core.cpython-36.pyc
+fillplots/__pycache__/inequalities.cpython-36.pyc
+fillplots/__pycache__/mplcolors.cpython-36.pyc
+fillplots/__pycache__/regions.cpython-36.pyc
+fillplots/utils/__pycache__/__init__.cpython-36.pyc
+fillplots/utils/__pycache__/chainstruct.cpython-36.pyc
+fillplots/utils/__pycache__/py3compat.cpython-36.pyc
+
