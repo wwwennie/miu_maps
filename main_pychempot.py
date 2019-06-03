@@ -8,6 +8,7 @@ import numpy as np
 from compound import *
 from miu_ineq import *
 from miu_plot import *
+from miu_intersect import *
 
 # The purpose of this module is to port over the plotting of chemical potential maps to Python
 # Three example cases are given: SrZrO3, BiVO4, BaCeO3; import variables from data_*.py files
@@ -61,13 +62,19 @@ if __name__ == "__main__":
     #from data_sro import *
 
     compete_list,compete_formulae = make_miu(host,compete,c_var,dep_var)
-    compete_list_lambdas_muV = solve_for_lambdas(compete_list,dep_var,ind_var,tuple_list)
+    compete_list_lambdas_mu = solve_for_lambdas(compete_list,dep_var,ind_var,tuple_list)
+
+    # find intersection
+    curve1, curve2 = 1,3
+    print("")
+    print("Intersection between %s and %s"%(compete_formulae[1],compete_formulae[3]))
+    (x,y) = linear_intersect(compete_list_lambdas_mu[curve1][0],compete_list_lambdas_mu[curve2][0])
+    print(x,y)
 
     # plot things
-    miu_plot(compete_list_lambdas_muV,xaxis=xlim,yaxis=ylim,
+    miu_plot(compete_list_lambdas_mu,xaxis=xlim,yaxis=ylim,
              axes_labels=(xaxes_label,yaxes_label),show_legend=True, labels=compete_formulae)
-
-
+    plt.show()
 
 
 
