@@ -1,2 +1,4 @@
 __pycache__
 *.pyc
+**/fillplots/__pycache__/*
+**/fillplots/utils/*
