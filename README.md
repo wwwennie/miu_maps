@@ -8,7 +8,7 @@ See data_\*.py for example input formats.
 
 Dependencies: [fillplots](https://github.com/tkf/fillplots)
 
-Note: for compatibility in python 3.+, modify mplcolors.py
+Note: for compatibility in python 3.+, modify in <mplcolors.py>
 ~~~~
         colors = rcParams['axes.color_cycle']
 ~~~~
