@@ -1,6 +1,6 @@
 # miu_maps
 
-A small python package for generating chemical potential maps involving a host material and competing phases. 
+A small python collection for generating chemical potential maps involving a host material and competing phases. 
 
 Using sympy: based on inputted phases and enthalpies of formation, it parses chemical formulae, constructs and solves appropriate chemical potential inequalities, and creates a plot
 
