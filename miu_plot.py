@@ -1,5 +1,6 @@
 from fillplots import Plotter, annotate_regions
 import matplotlib.pyplot as plt
+import numpy as np
 
 def miu_plot(list_lambdas,title="",axes_labels=("",""),xaxis=(-10,0),yaxis=(-10,0),
              show_legend=False,labels=[]):
@@ -36,9 +37,9 @@ def miu_plot(list_lambdas,title="",axes_labels=("",""),xaxis=(-10,0),yaxis=(-10,
             i=i+1
 
     # prettify inequality curves
-    i=0; picker=["solid","dashed","dotted","-.","solid"]
+    i=0; 
     for ineq in plotter.regions[0].inequalities:
-        ineq.config.line_args = {'color': 'black', 'linestyle':picker[i]}
+        ineq.config.line_args = {'color': color_picker(i), 'linestyle':line_picker(i)}
         i=i+1
     plotter.plot()
     if show_legend:
@@ -46,3 +47,17 @@ def miu_plot(list_lambdas,title="",axes_labels=("",""),xaxis=(-10,0),yaxis=(-10,
 
     return plotter
 
+def color_picker(index):
+  """ For when more control over colors is preferred 
+      Cycles over the possible options """
+  colors= ["royalblue","darkorange","darkgreen","darkcyan","k","cornflowerblue","crimson","indigo","darkmagenta","goldenrod","navy","slategray","olivedrab","saddlebrown"]
+  index = np.mod(index,len(colors))
+  return colors[index]
+
+def line_picker(index):
+  """ For when more control over line styles is preferred 
+      Cycles over the possible options """
+
+  lines = ['solid','dashed','dotted','dashdot']
+  index = np.mod(index,len(lines))
+  return lines[index]

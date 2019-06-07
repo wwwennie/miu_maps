@@ -71,9 +71,18 @@ if __name__ == "__main__":
     (x,y) = linear_intersect(compete_list_lambdas_mu[curve1][0],compete_list_lambdas_mu[curve2][0])
     print(x,y)
 
-    # plot things
-    miu_plot(compete_list_lambdas_mu,xaxis=xlim,yaxis=ylim,
+    # make plot 
+    plotter = miu_plot(compete_list_lambdas_mu,xaxis=xlim,yaxis=ylim,
              axes_labels=(xaxes_label,yaxes_label),show_legend=True, labels=compete_formulae)
+
+    # control of plot aesthetics
+    plotter.ax.yaxis.tick_right()
+    plotter.ax.yaxis.set_ticks_position('both')
+    plotter.ax.yaxis.set_label_position('right')
+    plotter.ax.xaxis.tick_top()
+    plotter.ax.xaxis.set_ticks_position('both')
+    plotter.ax.xaxis.set_label_position('top')
+    plt.gca().set_aspect('equal',adjustable='box')
     plt.show()
 
 

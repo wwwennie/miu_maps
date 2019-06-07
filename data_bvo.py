@@ -35,7 +35,7 @@ ind_var = ("Bi",)
 tuple_list = [False, True, True, True,False]
 
 # plotting parameters
-xlim=(-13,0)
-ylim=(-13,0)
+xlim=(-11.676,0)
+ylim=(-11.676,0)
 xaxes_label=r"$\mu_{Bi}$ (eV)"
 yaxes_label=r"$\mu_{V}$ (eV)"
