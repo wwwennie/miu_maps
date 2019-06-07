@@ -14,3 +14,5 @@ Note: for compatibility in python 3.+, modify in <mplcolors.py>
 ~~~~
 
 to a color picker routine of your choice.
+
+See example_plot.png for output example.
