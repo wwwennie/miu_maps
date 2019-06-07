@@ -6,7 +6,9 @@ Using sympy: based on inputted phases and enthalpies of formation, it parses che
 
 See data_\*.py for example input formats.
 
-Dependencies: [fillplots](https://github.com/tkf/fillplots)
+Dependencies: [fillplots](https://github.com/tkf/fillplots), [pymatgen](https://pymatgen.org)
+
+Install: use pip or conda
 
 Note: for compatibility in python 3.+, modify in <mplcolors.py>
 ~~~~
@@ -14,3 +16,5 @@ Note: for compatibility in python 3.+, modify in <mplcolors.py>
 ~~~~
 
 to a color picker routine of your choice.
+
+See example_plot.png for output example.
