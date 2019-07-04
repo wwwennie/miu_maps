@@ -83,6 +83,7 @@ if __name__ == "__main__":
     plotter.ax.xaxis.set_ticks_position('both')
     plotter.ax.xaxis.set_label_position('top')
     plt.gca().set_aspect('equal',adjustable='box')
+    plt.tight_layout()
     plt.show()
 
 

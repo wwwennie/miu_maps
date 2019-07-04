@@ -27,8 +27,10 @@ def miu_plot(list_lambdas,title="",axes_labels=("",""),xaxis=(-10,0),yaxis=(-10,
 
 
     #prettify the plot
-    plt.xlabel(axes_labels[0])
-    plt.ylabel(axes_labels[1])
+    plt.xlabel(axes_labels[0],fontsize=14,labelpad=10)
+    plt.ylabel(axes_labels[1],fontsize=14)
+    plt.xticks(fontsize=16)
+    plt.yticks(fontsize=16)
 
     if show_legend:
         i=0

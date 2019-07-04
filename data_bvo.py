@@ -12,13 +12,14 @@ compete=[("Bi2O3",-5.785),
          ("V2O3",-13.273),
          ("V2O5",-16.1427), 
         ("BiV",-11.676)] # last ineq is helper line for identifying boundaries
-
-## Yin 2011
+#
+# Yin 2011
 #host=("BiVO4",-13.95)
 #compete=[("Bi2O3",-5.94805),
 #         ("VO2",-9),
 #         ("V2O3",-13.07),
-#         ("V2O5",-19.01)]
+#         ("V2O5",-19.01),
+#         ("BiV",-13.95)]
 
 # constraint variable
 # host enthalpy of formation will constrain mu_O
@@ -35,7 +36,7 @@ ind_var = ("Bi",)
 tuple_list = [False, True, True, True,False]
 
 # plotting parameters
-xlim=(-11.676,0)
-ylim=(-11.676,0)
+xlim=(-13.95,0)
+ylim=(-13.95,0)
 xaxes_label=r"$\mu_{Bi}$ (eV)"
 yaxes_label=r"$\mu_{V}$ (eV)"
